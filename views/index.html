@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{> favicons}}
+  </head>
+  <body>
+    <header>
+      <h1>Roll For It</h1>
+    </header>
+    <section class='hexagon'>
+      <div class="hexagontent"></div>
+    </section>
+    <section class="new-roll">
+      <input type="submit" value="Roll Die" class="roll-die">
+      <input type="submit" value="Show Roll History" class="show-historical">
+    </section>
+
+    <section class="historical-rolls"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

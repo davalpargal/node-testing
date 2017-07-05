@@ -1,0 +1,42 @@
+{
+  "name": "node-testing",
+  "version": "1.0.0",
+  "description": "testing using sinon.js",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "start": "concurrently -k 'npm run server' 'webpack --watch'",
+    "build": "webpack",
+    "server": "node server.js",
+    "lint": "jshint server.js test lib && eslint server.js test lib",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Daval Pargal",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "css-loader": "^0.23.1",
+    "express": "^4.12.3",
+    "express-cors": "0.0.3",
+    "hbs": "^4.0.0",
+    "jquery": "^3.1.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "eslint": "^3.3.1",
+    "jshint": "^2.9.3",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5"
+  },
+  "engines": {
+    "node": "6.3.1"
+  }
+}
